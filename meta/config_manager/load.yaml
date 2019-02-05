@@ -1,0 +1,14 @@
+---
+argument_spec:
+
+  ansible_network_os:
+    description:
+      - Set the name of the Ansible network OS platform. This value should be
+        set to `iosxr` for this provider.
+    required: true
+
+  config_manager_text:
+    description:
+      - Provide the network device configuration as a single string. The
+        configuration text will be loaded onto the target network deivce.
+    type: str
